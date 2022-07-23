@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_gab"
+    app:startDestination="@id/telaPrincipalFragment">
+
+    <fragment
+        android:id="@+id/telaPrincipalFragment"
+        android:name="br.com.zup.desafio_modelo_1.fragment.TelaPrincipalFragment"
+        android:label="SimCity São João"
+        tools:layout="@layout/fragment_tela_principal" >
+        <action
+            android:id="@+id/action_telaPrincipalFragment_to_telaCadastroProdutosFragment"
+            app:destination="@id/telaCadastroProdutosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/telaCadastroProdutosFragment"
+        android:name="br.com.zup.desafio_modelo_1.fragment.TelaCadastroProdutosFragment"
+        android:label="Produtos"
+        tools:layout="@layout/fragment_tela_cadastro_produtos" >
+        <action
+            android:id="@+id/action_telaCadastroProdutosFragment_to_telaProdutoCadastradosFragment"
+            app:destination="@id/telaProdutoCadastradosFragment" />
+        <action
+            android:id="@+id/action_telaCadastroProdutosFragment_to_valorTotalFragment"
+            app:destination="@id/valorTotalFragment" />
+        <action
+            android:id="@+id/action_telaCadastroProdutosFragment_to_telaPrincipalFragment"
+            app:destination="@id/telaPrincipalFragment"
+            app:popUpTo="@id/telaPrincipalFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/telaProdutoCadastradosFragment"
+        android:name="br.com.zup.desafio_modelo_1.fragment.TelaProdutoCadastradosFragment"
+        android:label="Produtos"
+        tools:layout="@layout/fragment_tela_produto_cadastrados" >
+        <action
+            android:id="@+id/action_telaProdutoCadastradosFragment_to_detalhesFragment"
+            app:destination="@id/detalhesFragment" />
+        <action
+            android:id="@+id/action_telaProdutoCadastradosFragment_to_telaCadastroProdutosFragment"
+            app:destination="@id/telaCadastroProdutosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/valorTotalFragment"
+        android:name="br.com.zup.desafio_modelo_1.fragment.ValorTotalFragment"
+        android:label="Valor total"
+        tools:layout="@layout/fragment_valor_total" >
+        <action
+            android:id="@+id/action_valorTotalFragment_to_telaCadastroProdutosFragment"
+            app:destination="@id/telaCadastroProdutosFragment" />
+        <action
+            android:id="@+id/action_valorTotalFragment_to_telaProdutoCadastradosFragment"
+            app:destination="@id/telaProdutoCadastradosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalhesFragment"
+        android:name="br.com.zup.desafio_modelo_1.fragment.DetalhesFragment"
+        android:label="Detalhes do produto"
+        tools:layout="@layout/fragment_detalhes" >
+        <action
+            android:id="@+id/action_detalhesFragment_to_telaProdutoCadastradosFragment"
+            app:destination="@id/telaProdutoCadastradosFragment"
+            app:popUpTo="@id/telaProdutoCadastradosFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

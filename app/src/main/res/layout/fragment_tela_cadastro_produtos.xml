@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/irTelaCadastro"
+    tools:context=".fragment.TelaCadastroProdutosFragment"
+    android:layout_margin="@dimen/margin_16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Cadastro de produtos"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditNomeDeProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Produto"
+        android:inputType="text"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/EditQuantidadeProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantidade do produto"
+        android:inputType="text"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/EditValorProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor(unitário) do produto"
+        android:inputType="text"
+        android:importantForAutofill="no"/>
+
+    <EditText
+        android:id="@+id/EditReceita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Receita"
+        android:inputType="text"
+        android:importantForAutofill="no"/>
+
+    <Button
+        android:id="@+id/botaoCadastraNovoproduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CADASTRAR NOVO PRODUTO"
+        android:backgroundTint="@color/vermelho"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:id="@+id/botaoVerProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VER PRODUTO"
+        android:backgroundTint="@color/verde"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:id="@+id/botaoValorTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VALOR TOTAL"
+        android:backgroundTint="@color/azul_escuro"
+        android:textAllCaps="true"/>
+
+
+</LinearLayout>
+</ScrollView>

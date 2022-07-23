@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvItemLista"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_16dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivCarrinho"
+            android:layout_width="@dimen/valor_50dp"
+            android:layout_height="@dimen/valor_50dp"
+            android:layout_margin="@dimen/margin_8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/carrinho"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvNomeProduto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/texto_12sp"
+            android:layout_marginEnd="@dimen/texto_12sp"
+            android:text="Nome Produto"
+            android:textSize="@dimen/font_14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCarrinho"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivCarrinho"
+            app:layout_constraintTop_toTopOf="@+id/ivCarrinho" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

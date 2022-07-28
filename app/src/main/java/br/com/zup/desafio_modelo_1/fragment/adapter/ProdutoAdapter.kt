@@ -2,10 +2,7 @@ package br.com.zup.desafio_modelo_1.fragment.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.EditText
 import androidx.recyclerview.widget.RecyclerView
-import br.com.zup.desafio_modelo_1.R
-import br.com.zup.desafio_modelo_1.databinding.FragmentTelaProdutoCadastradosBinding
 import br.com.zup.desafio_modelo_1.databinding.ProdutoItemBinding
 import br.com.zup.desafio_modelo_1.model.Produto
 
@@ -16,7 +13,11 @@ class ProdutoAdapter (
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ProdutoItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val binding = ProdutoItemBinding.inflate(
+            LayoutInflater.from(parent.context),
+            parent,
+            false)
+
         return ViewHolder(binding)
     }
 

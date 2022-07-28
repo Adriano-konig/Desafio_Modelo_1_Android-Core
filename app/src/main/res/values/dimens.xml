@@ -12,4 +12,11 @@
     <dimen name="tamanho_80dp">80dp</dimen>
     <dimen name="margin_200dp">200dp</dimen>
     <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="marginBottom_30dp">30dp</dimen>
+    <dimen name="marginEnd_20dp">20dp</dimen>
+    <dimen name="width_40dp">40dp</dimen>
+    <dimen name="height_40dp">40dp</dimen>
+    <dimen name="marginStart_10dp">10dp</dimen>
+    <dimen name="marginStart_20dp">20dp</dimen>
+    <dimen name="marginEnd_126dp">126dp</dimen>
 </resources>

@@ -13,6 +13,9 @@
         android:id="@+id/imageView3"
         android:layout_width="@dimen/tamanho_80dp"
         android:layout_height="@dimen/tamanho_80dp"
+        android:layout_marginStart="@dimen/marginStart_20dp"
+        android:layout_marginEnd="@dimen/marginEnd_20dp"
+        android:layout_marginBottom="@dimen/marginBottom_30dp"
         android:src="@drawable/carrinho"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toStartOf="@+id/nomeProdutoEditado"
@@ -23,39 +26,39 @@
         android:id="@+id/nomeProdutoEditado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/marginEnd_126dp"
         android:text="NomeProduto"
+        android:textSize="@dimen/titulo_16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.114" />
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="Quantidade:"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Valor unitário:"
+        android:layout_marginTop="8dp"
+        android:text="Valor unitário: R$"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/marginStart_10dp"
         android:text="Receita:"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView6"
@@ -65,7 +68,7 @@
         android:id="@+id/quantidadeEditado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="@dimen/marginStart_10dp"
         android:text="0"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
         app:layout_constraintStart_toEndOf="@+id/textView5"
@@ -75,7 +78,6 @@
         android:id="@+id/valorEditado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
         android:text="0.0"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintStart_toEndOf="@+id/textView6"
@@ -85,9 +87,21 @@
         android:id="@+id/receitaEditado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="@dimen/marginStart_10dp"
         android:text="TextViewReceita"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/ic_Favoritar"
+        android:layout_width="@dimen/width_40dp"
+        android:layout_height="@dimen/height_40dp"
+        android:layout_marginEnd="@dimen/marginEnd_20dp"
+        android:layout_marginBottom="@dimen/marginBottom_30dp"
+        android:src="@drawable/ic_favoritar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

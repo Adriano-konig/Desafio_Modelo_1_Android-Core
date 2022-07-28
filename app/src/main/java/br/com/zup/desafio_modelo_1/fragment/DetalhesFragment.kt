@@ -16,7 +16,6 @@ import br.com.zup.desafio_modelo_1.model.Produto
 class DetalhesFragment : Fragment() {
 
     private lateinit var binding: FragmentDetalhesBinding
-    private val listaProduto = mutableListOf<Produto>()
 
 
     override fun onCreateView(
@@ -47,8 +46,6 @@ class DetalhesFragment : Fragment() {
         binding.quantidadeEditado.text = produto.getQuantidadeProduto().toString()
         binding.valorEditado.text = produto.getValorProduto().toString()
         binding.receitaEditado.text = produto.getReceita()
-//        binding.recyclerView.adapter = produtoAdapter
-//        binding.recyclerView.layoutManager = LinearLayoutManager(context)
     }
 
     private fun favoritarProduto() {

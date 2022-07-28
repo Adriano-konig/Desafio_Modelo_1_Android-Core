@@ -31,14 +31,17 @@ class TelaProdutoCadastradosFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentTelaProdutoCadastradosBinding.inflate(inflater,container,false)
-        (activity as HomeActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
         return binding.root
+        supportActionBar()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         exibirRecyclerView()
+    }
+
+    private fun supportActionBar(){
+        (activity as HomeActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
 

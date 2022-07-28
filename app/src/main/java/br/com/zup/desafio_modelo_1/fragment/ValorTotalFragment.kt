@@ -16,7 +16,6 @@ import br.com.zup.desafio_modelo_1.model.Produto
 
 class ValorTotalFragment : Fragment() {
 
-
     private lateinit var binding: FragmentValorTotalBinding
     private lateinit var listaProduto: ArrayList<Produto>
 
@@ -26,13 +25,8 @@ class ValorTotalFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentValorTotalBinding.inflate(inflater,container,false)
-        (activity as HomeActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
         return binding.root
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        (activity as HomeActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -42,7 +36,9 @@ class ValorTotalFragment : Fragment() {
         recuperarExibirDados()
     }
 
-
+    private fun supportActionBar(){
+        (activity as HomeActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
 
     private fun recuperarExibirDados() {
         val bundle = arguments?.getParcelableArrayList<Produto>(PRODUTO_KEY)

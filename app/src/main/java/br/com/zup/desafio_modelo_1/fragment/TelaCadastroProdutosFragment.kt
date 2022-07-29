@@ -28,8 +28,8 @@ class TelaCadastroProdutosFragment : Fragment() {
         binding = FragmentTelaCadastroProdutosBinding.inflate(inflater, container, false)
         return binding.root
         supportActionBar()
-
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         buttonCadastrar()
@@ -114,8 +114,8 @@ class TelaCadastroProdutosFragment : Fragment() {
      }catch (ex : Exception){
          ex.toString()
          Toast.makeText(context, CAMPO_NUMERO, Toast.LENGTH_LONG).show()
-         binding.EditQuantidadeProduto.error = CAMPO_OBRIGATORIO
-         binding.EditValorProduto.error= CAMPO_OBRIGATORIO
+             binding.EditQuantidadeProduto.error = CAMPO_OBRIGATORIO
+             binding.EditValorProduto.error= CAMPO_OBRIGATORIO
      }
         return null
     }

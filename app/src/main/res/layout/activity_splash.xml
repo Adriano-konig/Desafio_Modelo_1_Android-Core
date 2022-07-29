@@ -24,7 +24,7 @@
         android:id="@+id/titulo_simCity_São_joão"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SimCity São João"
+        android:text="@string/simcity_sao_joao"
         android:textColor="@color/white"
         android:textSize="@dimen/titulo_16sp"
         android:textStyle="bold"

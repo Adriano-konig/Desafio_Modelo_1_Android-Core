@@ -10,7 +10,6 @@ class Produto(
     private var valorProduto: Double,
     private var receita: String
 ):Parcelable {
-
     fun getNomeProduto() = this.nomeProduto
     fun getQuantidadeProduto() = this.quantidadeProduto
     fun getValorProduto() = this.valorProduto

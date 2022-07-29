@@ -2,4 +2,22 @@
     <string name="app_name">SimCity São joão</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Texto_valor_total">O valor total de todos os produtos é de: R$</string>
+    <string name="cadastrar_novo_produto">CADASTRAR NOVO PRODUTO</string>
+    <string name="ver_produto">VER PRODUTO</string>
+    <string name="nome_produto">Nome Produto</string>
+    <string name="produtos_cadastrados">Produtos cadastrados</string>
+    <string name="texto_festas_juninas">Festas juninas, é algo muito bom! E em SimCity não é diferente! Aqui nesse app você consegue organizar a sua lista de compras para a sua festa junina de maneira fácil e simples, só cadastrar os produtos da sua receita e se divertir!</string>
+    <string name="ir_para_produtos">IR PARA PRODUTOS</string>
+    <string name="cadastro_de_produtos">Cadastro de produtos</string>
+    <string name="nome_do_produto">Nome do Produto</string>
+    <string name="quantidade_do_produto">Quantidade do produto</string>
+    <string name="valor_unitario_do_produto">Valor(unitário) do produto</string>
+    <string name="receita">Receita</string>
+    <string name="valor_total">VALOR TOTAL</string>
+    <string name="nomeproduto">NomeProduto</string>
+    <string name="quantidade">Quantidade:</string>
+    <string name="valor_unitario">Valor unitário: R$</string>
+    <string name="_receita">Receita:</string>
+    <string name="simcity_sao_joao">SimCity São João</string>
 </resources>

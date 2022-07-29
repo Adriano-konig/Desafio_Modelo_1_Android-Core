@@ -19,4 +19,6 @@
     <dimen name="marginStart_10dp">10dp</dimen>
     <dimen name="marginStart_20dp">20dp</dimen>
     <dimen name="marginEnd_126dp">126dp</dimen>
+    <dimen name="marginTop_50dp">50dp</dimen>
+    <dimen name="margintop_10dp">10dp</dimen>
 </resources>

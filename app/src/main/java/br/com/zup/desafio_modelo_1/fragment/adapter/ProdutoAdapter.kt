@@ -27,7 +27,6 @@ class ProdutoAdapter (
         holder.binding.cvItemLista.setOnClickListener{
             clickProduto(produto)
         }
-
     }
 
     override fun getItemCount() = listaProdutos.size
@@ -43,8 +42,8 @@ class ProdutoAdapter (
 
     class ViewHolder(val binding: ProdutoItemBinding):RecyclerView.ViewHolder(binding.root){
         fun adicionarProdutosView(produto: Produto){
+            binding.tvqtdade.text = produto.getQuantidadeProduto().toString()
             binding.tvNomeProduto.text = produto.getNomeProduto()
         }
     }
-
 }

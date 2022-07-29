@@ -32,8 +32,8 @@ class ValorTotalFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         irTelaCadastroDeProduto()
-        irTelaVerProduto()
         recuperarExibirDados()
+        irTelaVerProduto()
     }
 
     private fun supportActionBar(){
@@ -41,6 +41,7 @@ class ValorTotalFragment : Fragment() {
     }
 
     private fun recuperarExibirDados() {
+
         val bundle = arguments?.getParcelableArrayList<Produto>(PRODUTO_KEY)
 
         if (bundle != null){
@@ -74,9 +75,10 @@ class ValorTotalFragment : Fragment() {
     }
 
     fun irTelaVerProduto(){
+        val bundle = bundleOf("PRODUTOS" to listaProduto)
         binding.buttonVerProduto.setOnClickListener{
             NavHostFragment.findNavController(this).
-            navigate(R.id.action_valorTotalFragment_to_telaProdutoCadastradosFragment, novoLista())
+            navigate(R.id.action_valorTotalFragment_to_telaProdutoCadastradosFragment, bundle)
         }
     }
 

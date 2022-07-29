@@ -8,14 +8,13 @@
     tools:context=".fragment.TelaProdutoCadastradosFragment"
     android:layout_margin="@dimen/margin_16dp">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="2dp"
-        android:text="Produto cadastrado"
-        android:textSize="@dimen/texto_12sp"
+        android:text="@string/produtos_cadastrados"
+        android:textSize="@dimen/titulo_16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,9 +22,9 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/margintop_10dp"
         tools:itemCount="6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
